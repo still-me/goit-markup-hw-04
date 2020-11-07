@@ -62,6 +62,7 @@
   --white: #ffffff;
   --second-backgroung-color: #f5f4fa;
   --black: #000000;
+  --icons-color: #afb1b8;
 }
 
 html {
@@ -198,7 +199,7 @@ footer .link:focus {
 .nav-link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 0px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -207,8 +208,24 @@ footer .link:focus {
 }
 
 .contacts-list {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
+}
+
+.letter-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.smaptphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 .cnts-item + .cnts-item {
@@ -216,6 +233,8 @@ footer .link:focus {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -224,10 +243,23 @@ footer .link:focus {
 .hero {
   display: flex;
   justify-content: center;
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero/Img.jpg');
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-box {
@@ -259,8 +291,15 @@ footer .link:focus {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--white);
   background-color: var(--accent-text-color);
+  border: transparent 0px;
+}
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -275,9 +314,20 @@ footer .link:focus {
   margin-right: 30px;
 }
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.advantages-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--second-backgroung-color);
+  border-radius: 4px;
+}
+
+.advantages-svg {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages-title {
@@ -290,16 +340,14 @@ footer .link:focus {
 }
 
 .activity .title,
-.team .title {
+.team .title,
+.clients .title {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .activity {
   padding-top: 0;
-}
-
-.activity .title {
-  margin-bottom: 50px;
 }
 
 .activity .list {
@@ -312,6 +360,7 @@ footer .link:focus {
 
 .team {
   background-color: var(--second-backgroung-color);
+  background-size: cover;
 }
 
 .team .list {
@@ -351,9 +400,131 @@ footer .link:focus {
 }
 
 .profession {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.sl-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icons-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: inherit;
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--white);
+  background-color: var(--accent-text-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.sl-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icons-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: inherit;
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--white);
+  background-color: var(--accent-text-color);
+}
+/* clients */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.cl-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cl-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  fill: var(--icons-color);
+}
+
+.client1-icon {
+  width: 44px;
+  height: 49px;
+  fill: inherit;
+}
+
+.client2-icon {
+  width: 40px;
+  height: 52px;
+  fill: inherit;
+}
+
+.client3-icon {
+  width: 41px;
+  height: 43px;
+  fill: inherit;
+}
+.client4-icon {
+  width: 80px;
+  height: 42px;
+  fill: inherit;
+}
+.client5-icon {
+  width: 59px;
+  height: 47px;
+  fill: inherit;
+}
+.client6-icon {
+  width: 88px;
+  height: 45px;
+  fill: inherit;
+}
+
+.cl-link:hover,
+.cl-link:focus {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 
 .footer {
@@ -361,12 +532,20 @@ footer .link:focus {
 }
 
 .footer .container {
-  padding: 60px 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 footer .container {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.adress-logo-box {
+  width: 231px;
+  margin-right: 70px;
 }
 .adress {
   color: var(--white);
@@ -377,6 +556,7 @@ footer .container {
 }
 
 .contacts .contacts-link {
+  display: inline-flex;
   font-weight: inherit;
 }
 
@@ -384,6 +564,29 @@ footer .container {
   margin-bottom: 9px;
 }
 
+.join-box {
+  width: 206px;
+  height: 80px;
+}
+.join {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.join-box .social-link {
+  fill: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--white);
+  background-color: var(--accent-text-color);
+}
 .btn-container {
   padding-top: 94px;
   padding-bottom: 50px;
@@ -476,6 +679,15 @@ footer .container {
 
 .current-page {
   color: var(--accent-text-color);
-  border-bottom: 4px solid var(--accent-text-color);
+}
+
+.current-page::after {
+  content: '';
+  display: block;
+  margin-top: 28px;
+  width: 100%;
+  height: 4px;
   border-radius: 2px;
+
+  background-color: var(--accent-text-color);
 }

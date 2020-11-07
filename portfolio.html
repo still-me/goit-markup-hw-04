@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
-
     <header>
       <div class="container header-container">
         <nav class="nav">
@@ -41,19 +39,23 @@
         <ul class="list contacts-list">
           <li class="cnts-item">
             <a href="mailto:info@devstudio.com" class="link contacts-link">
+              <svg class="letter-icon">
+                <use href="./images/icons/icons.svg#letter"></use>
+              </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="cnts-item">
             <a href="tel:+380961111111" class="link contacts-link">
+              <svg class="smaptphone-icon">
+                <use href="./images/icons/icons.svg#smartphone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
     </header>
-
-    <!-- Основной контент -->
 
     <main>
       <section class="portfolio">
@@ -212,36 +214,94 @@
       </section>
     </main>
 
-    <!-- Футер сайта -->
-
     <footer class="footer">
       <div id="contacts" class="container">
-        <a href="" class="link logo"
-          ><span class="logo-item">Web</span>Studio</a
-        >
-        <address class="contacts">
-          <ul class="list">
-            <li class="list-item">
+        <div class="adress-logo-box">
+          <a href="" class="link logo"
+            ><span class="logo-item">Web</span>Studio</a
+          >
+          <address class="contacts">
+            <ul class="list">
+              <li class="list-item">
+                <a
+                  href="https://goo.gl/maps/qRCtbatXRMtNsMS67"
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="link adress"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="list-item">
+                <a href="mailto:info@devstudio.com" class="link contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list-item">
+                <a href="tel:+380961111111" class="link contacts-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="join-box">
+          <p class="join">присоединяйтесь</p>
+          <ul class="list social-list">
+            <li class="sl-item">
               <a
-                href="https://goo.gl/maps/qRCtbatXRMtNsMS67"
+                href="https://instagram.com"
+                class="link social-link"
                 target="_blank"
                 rel="noopener noreferer"
-                class="link adress"
-                >г. Киев, пр-т Леси Украинки, 26</a
+                aria-label="Instagram"
               >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-item">
-              <a href="mailto:info@devstudio.com" class="link contacts-link"
-                >info@devstudio.com</a
+            <li class="sl-item">
+              <a
+                href="https://twitter.com"
+                class="link social-link"
+                target="blank"
+                rel="noopener noreferer"
+                aria-label="Twitter"
               >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-item">
-              <a href="tel:+380961111111" class="link contacts-link"
-                >+38 096 111 11 11</a
+            <li class="sl-item">
+              <a
+                href="https://www.facebook.com"
+                class="link social-link"
+                target="blank"
+                rel="noopener noreferer"
+                aria-label="Facebook"
               >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sl-item">
+              <a
+                href="https://www.linkedin.com"
+                class="link social-link"
+                target="blank"
+                rel="noopener noreferer"
+                aria-label="Linkedin"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
